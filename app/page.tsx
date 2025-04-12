@@ -1,10 +1,11 @@
 import FAQAccordion from "@/components/Faq";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 md:p-24">
+    <main className="relative flex min-h-screen flex-col items-center p-4 md:p-24 md:pb-0">
       <Navbar />
 
       <header className="relative flex flex-col items-center justify-center text-center w-full min-h-[70vh] p-4 bg-blue-300 rounded-xl">
@@ -69,6 +70,45 @@ export default function Home() {
           className="absolute -bottom-12 right-1/2 md:right-1/6 md:flex hidden h-auto"
         />
       </section>
+
+      <section className="flex flex-col items-center justify-center w-full h-auto p-4 mt-8">
+        <h1 className="text-2xl md:text-4xl font-medium mb-6">Nous avons ce que vous cherchez</h1>
+        <div className="flex flex-col md:flex-row items-center justify-center w-full h-auto text-center">
+          <div className="flex flex-col items-center justify-center w-full md:w-1/3 p-4">
+            <h2 className="text-xl md:text-2xl font-medium">Plombier</h2>
+            <p className="text-gray-700">
+              Trouvez un plombier qualifié pour tous vos besoins en plomberie.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-full md:w-1/3 p-4">
+            <h2 className="text-xl md:text-2xl font-medium">Électricien</h2>
+            <p className="text-gray-700">
+              Trouvez un électricien qualifié pour tous vos besoins en électricité.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-full md:w-1/3 p-4">
+            <h2 className="text-xl md:text-2xl font-medium">Jardinier</h2>
+            <p className="text-gray-700">
+              Trouvez un jardinier qualifié pour tous vos besoins en jardinage.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-full md:w-1/3 p-4">
+            <h2 className="text-xl md:text-2xl font-medium">Mécanicien</h2>
+            <p className="text-gray-700">
+              Trouvez un mécanicien qualifié pour tous vos besoins en mécanique.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center w-full md:w-1/3 p-4">
+            <h2 className="text-xl md:text-2xl font-medium">Maçon</h2>
+            <p className="text-gray-700">
+              Trouvez un maçon qualifié pour tous vos besoins en maçonnerie.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <Footer />
     </main>
   );
 }
