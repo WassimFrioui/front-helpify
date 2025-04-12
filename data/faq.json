@@ -1,0 +1,14 @@
+[
+    {
+        "question": "Combien de services pouvons-nous appeler ?",
+        "answer": "Vous pouvez appeler autant de services que nécessaire."
+    },
+    {
+        "question": "Quels sont les types de services disponibles ?",
+        "answer": "Nous avons des services de développement web, de support technique, etc."
+    },
+    {
+        "question": "Comment puis-je obtenir de l'aide ?",
+        "answer": "Vous pouvez contacter notre support via l'email support@example.com."
+    }
+]
