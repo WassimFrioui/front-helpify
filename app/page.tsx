@@ -16,7 +16,7 @@ export default function Home() {
           <input
             type="text"
             placeholder="Que cherchez-vous ? Par exemple : Plombier "
-            className="w-full md:w-2/3 p-2 rounded-t-sm md:rounded-l-sm md:rounded-t-none bg-white"
+            className="w-full md:w-2/3 p-2 rounded-t-sm md:rounded-l-sm md:rounded-t-none bg-white active:outline-0 outline-none ring-0 focus:outline-none focus:ring-0"
           />
           <button className="bg-blue-950 text-white p-2 rounded-b-sm md:rounded-r-sm md:rounded-b-none transition-colors hover:bg-blue-900 w-full md:w-auto">
             Rechercher
