@@ -100,7 +100,7 @@ export default function RegisterPage() {
   return (
     <div className="relative flex flex-col items-center gap-12 justify-center min-h-screen bg-gray-100 bg-[url(/sign_bg.png)] bg-cover bg-center">
       <Link href="/"
-          className="md:hidden items-center justify-center flex p-4 text-white rounded-lg shadow-lg border bg-blue-500 hover:underline"
+          className="md:hidden items-center justify-center flex p-4 text-white rounded-lg shadow-lg border bg-blue-950  hover:underline"
       >
           <FaHome className="inline mr-2" />
           Retour à l&apos;accueil
@@ -121,7 +121,7 @@ export default function RegisterPage() {
                 value={form.firstname}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-950  focus:border-blue-500"
               />
             </div>
             <div className="w-full sm:w-1/2">
@@ -134,7 +134,7 @@ export default function RegisterPage() {
                 placeholder="Nom"
                 value={form.lastname}
                 onChange={handleChange}
-                className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-950  focus:border-blue-500"
                 required
               />
             </div>
@@ -151,7 +151,7 @@ export default function RegisterPage() {
               placeholder="Email"
               value={form.mail}
               onChange={handleChange}
-              className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-950  focus:border-blue-500"
               required
             />
           </div>
@@ -166,7 +166,7 @@ export default function RegisterPage() {
               placeholder="Téléphone"
               value={form.phone}
               onChange={handleChange}
-              className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-950  focus:border-blue-500"
               required
             />
           </div>
@@ -181,7 +181,7 @@ export default function RegisterPage() {
               placeholder="Adresse"
               value={form.address}
               onChange={handleChange}
-              className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-950  focus:border-blue-500"
               required
             />
           </div>
@@ -197,7 +197,7 @@ export default function RegisterPage() {
                 placeholder="Mot de passe"
                 value={form.password}
                 onChange={handleChange}
-                className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-950  focus:border-blue-500"
                 required
               />
               <div
@@ -219,21 +219,22 @@ export default function RegisterPage() {
               placeholder="Confirmer le mot de passe"
               value={form.passwordConfirm}
               onChange={handleChange}
-              className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-950  focus:border-blue-500"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+            className="w-full bg-blue-950 text-white py-2 rounded-md hover:bg-blue-900 cursor-pointer"
             disabled={loading}
+
           >
             {loading ? 'Chargement...' : "S'inscrire"}
           </button>
         </form>
         <p className="mt-4 text-sm text-center text-gray-600 sm:text-base">
           Déjà inscrit ?{' '}
-          <a href="/signin" className="text-blue-500 hover:underline">
+          <a href="/signin" className="text-blue-950  hover:underline">
             Se connecter
           </a>
         </p>
@@ -245,7 +246,7 @@ export default function RegisterPage() {
         </div>
       )}
       <Link href="/"
-      className="md:flex items-center justify-center hidden absolute top-4 left-4 p-4 text-white rounded-lg shadow-lg border bg-blue-500 hover:underline"
+      className="md:flex items-center justify-center hidden absolute top-4 left-4 p-4 text-white rounded-lg shadow-lg border bg-blue-950  hover:underline"
       >
         <FaHome className="inline mr-2" />
         Retour à l&apos;accueil

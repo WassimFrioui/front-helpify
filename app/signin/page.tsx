@@ -71,7 +71,7 @@ const SignIn = () => {
     return (
         <div className="relative flex flex-col items-center gap-12 justify-center min-h-screen bg-gray-100 bg-[url(/sign_bg.png)] bg-cover bg-center">
             <Link href="/"
-                className="md:hidden items-center justify-center flex p-4 text-white rounded-lg shadow-lg border bg-blue-500 hover:underline"
+                className="md:hidden items-center justify-center flex p-4 text-white rounded-lg shadow-lg border bg-blue-950 hover:underline"
             >
                 <FaHome className="inline mr-2" />
                 Retour à l&apos;accueil
@@ -90,7 +90,7 @@ const SignIn = () => {
                             value={form.mail}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-base"
+                            className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-950 focus:border-blue-950 sm:text-base"
                         />
                     </div>
                     <div>
@@ -105,7 +105,7 @@ const SignIn = () => {
                 placeholder="Mot de passe"
                 value={form.password}
                 onChange={handleChange}
-                className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-4 py-2 mt-1 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-950 focus:border-blue-500"
                 required
               />
               <div
@@ -119,7 +119,7 @@ const SignIn = () => {
                     <div>
                         <button
                             type="submit"
-                            className="w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:text-base"
+                            className="w-full px-4 py-2 text-white bg-blue-950 rounded-md hover:bg-blue-900 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-950 focus:ring-offset-2 sm:text-base"
                         >
                             Se connecter
                         </button>
@@ -127,7 +127,7 @@ const SignIn = () => {
                 </form>
                 <p className="mt-4 text-sm text-center text-gray-600 sm:text-base">
                     Pas encore inscrit ?{' '}
-                    <a href="/signup" className="text-blue-500 hover:underline">
+                    <a href="/signup" className="text-blue-950 hover:underline">
                         Créer un compte
                     </a>
                 </p>
@@ -138,7 +138,7 @@ const SignIn = () => {
                 </div>
             )}
             <Link href="/"
-                className="md:flex items-center justify-center hidden absolute top-4 left-4 p-4 text-white rounded-lg shadow-lg border bg-blue-500 hover:underline"
+                className="md:flex items-center justify-center hidden absolute top-4 left-4 p-4 text-white rounded-lg shadow-lg border bg-blue-950 hover:underline"
             >
                 <FaHome className="inline mr-2" />
                 Retour à l&apos;accueil
