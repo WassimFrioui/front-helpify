@@ -1,26 +1,22 @@
-import FAQAccordion from "@/components/Faq";
+import FAQAccordion from "@/components/Faq_prestaire";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center p-4 md:p-24 md:pb-0" suppressHydrationWarning> 
       <Navbar />
 
-      <header className="relative flex flex-col items-center justify-center text-center w-full min-h-[70vh] p-4 bg-blue-300 rounded-xl">
+      <header className="relative flex flex-col items-center justify-evenly text-center w-full min-h-[70vh] p-4 bg-blue-300 rounded-xl">
         <h1 className="text-3xl md:text-6xl text-white font-serif">
-          Trouver les bons <span className="text-blue-950 font-thin">prestataires</span> <br /> pour vos besoins
+          Devenez <span className="text-blue-950 font-thin">prestataire</span> <br /> et trouvez des clients
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center mt-4 w-full md:w-1/2">
-          <input
-            type="text"
-            placeholder="Que cherchez-vous ? Par exemple : Plombier "
-            className="w-full md:w-2/3 p-2 rounded-t-sm md:rounded-l-sm md:rounded-t-none bg-white active:outline-0 outline-none ring-0 focus:outline-none focus:ring-0"
-          />
-          <button className="bg-blue-950 text-white p-2 rounded-b-sm md:rounded-r-sm md:rounded-b-none transition-colors hover:bg-blue-900 w-full md:w-auto">
-            Rechercher
-          </button>
+            <Link href="/signin" className="bg-blue-950 text-white p-2 rounded-sm transition-colors hover:bg-blue-900 w-full md:w-1/2">
+                S&apos;inscrire
+            </Link>
         </div>
       </header>
 
@@ -53,7 +49,7 @@ export default function Home() {
 
       <section className="relative flex flex-col md:items-start text-center md:text-left items-center justify-center w-full mt-8 min-h-[50vh] overflow-hidden p-4 bg-blue-300 rounded-xl">
         <h1 className="text-2xl md:text-4xl font-bold mb-6 text-balance w-full md:w-2/3 text-white">
-          Des <span className="text-blue-950 font-serif italic">experts qualifiés</span> pour des besoins de tout type et de toute taille.
+          Offrez <span className="text-blue-950 font-serif italic">vos services </span> et trouvez des clients facilement.
         </h1>
 
         <a

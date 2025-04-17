@@ -87,6 +87,8 @@ const SignIn = () => {
                             type="email"
                             id="mail"
                             name="mail"
+                            placeholder="Adresse e-mail"
+                            autoComplete="email"
                             value={form.mail}
                             onChange={handleChange}
                             required
