@@ -14,7 +14,6 @@ interface User {
     postalCode: string;
     country: string;
     id: number;
-  // Ajoute d'autres champs si besoin
 }
 
 export default function HomePage() {

@@ -47,7 +47,7 @@ const SignIn = () => {
                   'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(authDTO),
-                credentials: 'include', // 🔥 ajoute ça pour envoyer/recevoir les cookies
+                credentials: 'include', // Pour les cookies
             });
               
 

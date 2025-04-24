@@ -17,7 +17,7 @@ const LogoutPage = () => {
                 });
 
                 if (response.ok) {
-                    router.push('/signin'); // Redirect to login page after logout
+                    router.push('/signin'); 
                 } else {
                     console.error('Failed to logout');
                 }

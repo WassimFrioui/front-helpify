@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Import des icônes
-import faqData from '@/data/faq_prestataire.json'; // Assurez-vous que le chemin est correct
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import faqData from '@/data/faq_prestataire.json'; 
 type FAQItem = {
     question: string;
     answer: string;
