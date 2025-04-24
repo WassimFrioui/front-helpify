@@ -44,10 +44,12 @@ const SignIn = () => {
             const res = await fetch('http://localhost:8080/auth/login', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                  'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(authDTO),
+                credentials: 'include', // 🔥 ajoute ça pour envoyer/recevoir les cookies
             });
+              
 
             if (!res.ok) {
                 const errorText = await res.text();
