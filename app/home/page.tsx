@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 interface User {
-  firstname: string;
+    firstname: string;
     lastname: string;
     mail: string;
     createdAt: string;
@@ -63,7 +63,7 @@ export default function HomePage() {
 
             Se déconnecter
         </a>
-
+        
     </main>
   );
 }
